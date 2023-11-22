@@ -13,10 +13,19 @@ age = parseInt(age);
 if (age >= 10 && age <=20) {
     alert("Тобі" + " " + age + " " + "років!");//від 11 до 20 
 
+} else if (age.toString().endsWith('2') && age != 112) {
+    alert("Тобі" + " " + age + " " + "роки!");//2
+
+} else if (age.toString().endsWith('3')&& age != 113) {
+    alert("Тобі" + " " + age + " " + "роки!");//3
+
+} else if (age.toString().endsWith('4')&& age != 114) {
+    alert("Тобі" + " " + age + " " + "роки!");//4
+
 } else if (age >= 11 && age <=150) {
     alert("Тобі" + " " + age + " " + "років!");//від 105 до 150 
 
-} else if ( age % 2 == 0) {
+} else if ( age % 2 == 0 && age != 6 && age != 8 && age != 0)  {
     alert("Тобі" + " " + age + " " + "роки!");//закінчується на 2
 
 } else if (age >= 102 && age <= 104) {
@@ -25,17 +34,17 @@ if (age >= 10 && age <=20) {
 }else if (age % 10 == 0) {
     alert("Тобі" + " " + age  + " " + "років!")//закінчується на нуль
 
-} else if (age != 11 && age % 10 == 1) {
-    alert("Тобі" + " " + age  + " " + "рік!")//закінчується на 1, але не 11
-
-} else if (age > 1 && age < 5) {
-    alert("Тобі" + " " + age + " " + "роки!");//2,3,4
-
 }  else if ( age >= 5 && age <= 9) {
     alert("Тобі" + " " + age + " " + "років!");//5,6,7,8,9
 
 } else if (age > 150) {
     alert("Введіть свій справжній вік");
+
+} else if (age == 1) {
+    alert("Тобі" + " " + age  + " " + "рік!")// 1
+
+} else if (age == 0) {
+    alert("Тобі" + " " + age  + " " + "років!")// 0
 
 } else {
     alert("Введіть свій вік");
